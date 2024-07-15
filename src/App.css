@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --main-bg-color: rgb(255, 255, 255);
+    --main-text-color: black;
+    --main-title-color: black;
+  }
+  
+.dark-mode {
+    --main-bg-color: rgb(0, 0, 0);
+    --main-text-color: white;
+    --main-title-color: rgb(252, 130, 1);
+}
+  
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+.Nav-Container {
+    position: relative;
+    width: 96vw;
+    margin: 2%;
+    height: 30vh;
+    background-color: rgba(3, 129, 247, 0.258);
+    box-shadow: 20px;
+    border-radius: 1rem; 
+    transition: height 0.6s ease-in-out, align-items 0.6s ease-in-out;
+}
+
+header{
+  display: flex;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+}
+
+nav img{
+  height: calc(100%);
+  width: auto;
+  object-fit: cover;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  transition: flex-direction 0.6s ease-in-out, align-items 0.6s ease-in-out;
+}
+
+a{
+  color: var(--main-text-color);
+}
+
+.Container{
+display: flex;
+width: 100vw;
+height: 100vh;
+transition: flex-direction 0.6s ease-in-out, align-items 0.6s ease-in-out;
+}
+
+@media (max-width: 760px) {
+    nav{
+        flex-direction: column;
+    } 
+    nav ul {
+      flex-direction: column;
+      align-items: center;  
+    }
+    .Nav-Container{
+      height: 30vh;
+      overflow: hidden;
+      overflow: scroll;
+      align-items: center;
+    }
+
+    .Container{
+     flex-direction: column;
+     align-items: center; 
+     overflow: hidden;
+     overflow: scroll;
+    }
+}
+
+
+.gradient{
+  background: linear-gradient(-45deg, #02e1fa 50%, #f750fa 50%);
+  width: 50vw;
+  height: 100vh;
+  filter: blur(760px);
+  z-index: -2;
+}
+.imageContainer{
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+}
+
+.childrenImage{
+  position: absolute;
+  margin: 5%;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.intro{
+  flex: 1;
+  margin: 2%;
+  flex-direction: column;
+}
+
+.title{
+  height: 20px;
+  margin-bottom:45px;
+  color:var(--main-title-color);
+}
+
+p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.Context{
+  flex: 1;
+  margin: 2%;
+  flex-direction: column;
+}
+
+.VideoTour{
+flex: 1;
+position: relative;
+}
+
+.videoasset{
+  position: absolute;
+  margin: 5%;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
