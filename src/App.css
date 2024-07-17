@@ -11,12 +11,14 @@
     --main-bg-color: rgb(255, 255, 255);
     --main-text-color: black;
     --main-title-color: black;
+    --main-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   }
   
 .dark-mode {
     --main-bg-color: rgb(0, 0, 0);
     --main-text-color: white;
     --main-title-color: rgb(252, 130, 1);
+    --main-box-shadow: 0 0.25rem 0.5rem rgb(252, 131, 0.3);
 }
   
 body {
@@ -32,7 +34,6 @@ body {
     margin: 2%;
     height: 30vh;
     background-color: rgba(3, 129, 247, 0.258);
-    box-shadow: 20px;
     border-radius: 1rem; 
     transition: height 0.6s ease-in-out, align-items 0.6s ease-in-out;
 }
@@ -124,10 +125,15 @@ transition: flex-direction 0.6s ease-in-out, align-items 0.6s ease-in-out;
   filter: blur(760px);
   z-index: -2;
 }
+
 .imageContainer{
   flex: 1;
   flex-direction: column;
   position: relative;
+  margin: 2%;
+  padding: 2%;
+  box-shadow: var(--main-box-shadow);
+  border-radius: 4%;
 }
 
 .childrenImage{
@@ -138,17 +144,21 @@ transition: flex-direction 0.6s ease-in-out, align-items 0.6s ease-in-out;
   width: 90%;
   height: 90%;
   object-fit: cover;
+  border-radius: 2%;
 }
 
 .intro{
   flex: 1;
-  margin: 2%;
   flex-direction: column;
+  margin: 2%;
+  padding: 2%;
+  box-shadow: var(--main-box-shadow);
+  border-radius: 5%;
 }
 
 .title{
   height: 20px;
-  margin-bottom:45px;
+  margin-bottom:5%;
   color:var(--main-title-color);
 }
 
@@ -163,11 +173,19 @@ p{
   flex: 1;
   margin: 2%;
   flex-direction: column;
+  margin: 2%;
+  padding: 2%;
+  box-shadow: var(--main-box-shadow);
+  border-radius: 5%;
 }
 
 .VideoTour{
 flex: 1;
 position: relative;
+margin: 2%;
+padding: 1%;
+box-shadow: var(--main-box-shadow);
+border-radius: 4%;
 }
 
 .videoasset{
@@ -178,5 +196,27 @@ position: relative;
   width: 90%;
   height: 90%;
   object-fit: cover;
+  border-radius: 2%;
+}
+
+
+
+.preprep{
+  flex: 1;
+
+}
+
+.prep{
+  flex: 1;
+
+}
+
+.gradeschool{
+  flex: 1;
+
+}
+
+.jss{
+  flex: 1;
 }
 

@@ -4,7 +4,7 @@ const HomeHero = () => {
   return (
     <div className='Container'>
       <div className='imageContainer'>
-         <div className='gradient'></div>
+       <div className='gradient'></div>
          <img src='assets/images/childrenplaying.webp' className='childrenImage'></img>
       </div>
       
