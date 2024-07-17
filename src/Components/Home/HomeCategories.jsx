@@ -2,21 +2,21 @@ import React from 'react'
 
 const HomeCategories = () => {
   return (
-    <div className='Container' style={{backgroundColor:'#7A7A7A'}}>
+    <div className='Container' style={{backgroundColor:'orange'}}>
         <div className='preprep'>
-
+        <img src='assets/images/childrenplaying.webp' className='preprepImage'></img>
         </div>
 
         <div className='prep' >
-            
+        <img src='assets/images/childrenplaying.webp' className='preprepImage'></img> 
         </div>
 
         <div className='gradeschool'>
-            
+        <img src='assets/images/childrenplaying.webp' className='preprepImage'></img> 
         </div>
 
         <div className='jss' >
-            
+        <img src='assets/images/childrenplaying.webp' className='preprepImage'></img>
         </div>
     </div>
   )
