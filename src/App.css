@@ -235,7 +235,7 @@ border-radius: 4%;
   position:relative;
   display: inline-block; /* Ensures the container fits the image size */
   overflow: hidden; /* Prevents the image from overflowing outside the container */
-  transition: transform 0.6s ease-in-out , border-radius 0.6s ease-in-out; /* Smooth transition for the transform property */
+  transition: transform 0.6s ease-in-out; /* Smooth transition for the transform property */
 }
 
 .preprepImage{
@@ -251,7 +251,6 @@ border-radius: 4%;
 
 .preprepImage:hover{
   transform: scale(1.1); /* Increase the size of the image by 10% */
-  border-radius: 5%;
 }
 
 .prep{
@@ -261,7 +260,7 @@ border-radius: 4%;
   position:relative;
   display: inline-block; /* Ensures the container fits the image size */
   overflow: hidden; /* Prevents the image from overflowing outside the container */
-  transition: transform 0.6s ease-in-out , border-radius 0.6s ease-in-out; /* Smooth transition for the transform property */
+  transition: transform 0.6s ease-in-out; /* Smooth transition for the transform property */
 }
 
 .gradeschool{
@@ -271,7 +270,7 @@ border-radius: 4%;
   position:relative;
   display: inline-block; /* Ensures the container fits the image size */
   overflow: hidden; /* Prevents the image from overflowing outside the container */
-  transition: transform 0.6s ease-in-out , border-radius 0.6s ease-in-out; /* Smooth transition for the transform property */
+  transition: transform 0.6s ease-in-out; /* Smooth transition for the transform property */
 }
 
 .jss{
@@ -281,6 +280,6 @@ border-radius: 4%;
   position:relative;
   display: inline-block; /* Ensures the container fits the image size */
   overflow: hidden; /* Prevents the image from overflowing outside the container */
-  transition: transform 0.6s ease-in-out , border-radius 0.6s ease-in-out; /* Smooth transition for the transform property */
+  transition: transform 0.6s ease-in-out; /* Smooth transition for the transform property */
 }
 
