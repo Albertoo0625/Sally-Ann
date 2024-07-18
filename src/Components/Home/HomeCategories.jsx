@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeCategories = () => {
   return (
-    <div className='Container' style={{backgroundColor:'orange'}}>
+    <div className='Container' style={{}}>
         <div className='preprep'>
         <img src='assets/images/childrenplaying.webp' className='preprepImage'></img>
         </div>
