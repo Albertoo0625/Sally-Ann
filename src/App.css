@@ -99,7 +99,7 @@ transition: flex-direction 0.6s ease-in-out, align-items 0.6s ease-in-out;
     .gradient{
       background: linear-gradient(-45deg, #02e1fa 50%, #f750fa 50%);
       width: 100vw;
-      height: 100vh;
+      height: 80vh;
       filter: blur(480px);
       z-index: -2;
     }
@@ -148,8 +148,8 @@ transition: flex-direction 0.6s ease-in-out, align-items 0.6s ease-in-out;
 .gradient{
   background: linear-gradient(-45deg, #02e1fa 50%, #f750fa 50%);
   width: 50vw;
-  height: 100vh;
-  filter: blur(760px);
+  height: 80vh;
+  filter: blur(1280px);
   z-index: -2;
 }
 
