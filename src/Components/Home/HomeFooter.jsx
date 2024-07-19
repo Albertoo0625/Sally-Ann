@@ -15,7 +15,7 @@ const HomeFooter = () => {
     </div>
     
       <div  className='VideoTour'>
-       <div className='gradient'></div>
+      <div className='gradient' ></div>
        <video className='videoasset' width="auto" height="auto" controls>
         <source src='assets/video/video.mp4' type="video/mp4"/>
         Your browser does not support the video tag.

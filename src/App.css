@@ -75,76 +75,6 @@ height: 100vh;
 transition: flex-direction 0.6s ease-in-out, align-items 0.6s ease-in-out;
 }
 
-@media (max-width: 760px) {
-    nav{
-        flex-direction: column;
-    } 
-    nav ul {
-      flex-direction: column;
-      align-items: center;  
-    }
-    .Nav-Container{
-      height: 30vh;
-      overflow: hidden;
-      overflow: scroll;
-      align-items: center;
-    }
-
-    .Container{
-     flex-direction: column;
-     align-items: center; 
-     overflow: hidden;
-     overflow: scroll;
-    }
-    .gradient{
-      background: linear-gradient(-45deg, #02e1fa 50%, #f750fa 50%);
-      width: 100vw;
-      height: 80vh;
-      filter: blur(480px);
-      z-index: -2;
-    }
-
-    .imageContainer{
-      flex: 1;
-      flex-direction: column;
-      position: relative;
-      width: 90vw;
-    }
-
-    .preprep{
-      flex: 1;
-      flex-direction: column;
-      position: relative;
-      width: 90vw;
-    }
-    .prep{
-      flex: 1;
-      flex-direction: column;
-      position: relative;
-      width: 90vw;
-    }
-    .gradeschool{
-      flex: 1;
-      flex-direction: column;
-      position: relative;
-      width: 90vw;
-    }
-
-    .jss{
-      flex: 1;
-      flex-direction: column;
-      position: relative;
-      width: 90vw;
-    }
-
-    .VideoTour{
-      flex: 1;
-      position: relative;
-      width: 90vw;
-      }
-}
-
-
 .gradient{
   background: linear-gradient(-45deg, #02e1fa 50%, #f750fa 50%);
   width: 50vw;
@@ -273,5 +203,202 @@ border-radius: 4%;
   display: inline-block; /* Ensures the container fits the image size */
   overflow: hidden; /* Prevents the image from overflowing outside the container */
   transition: transform 0.6s ease-in-out; /* Smooth transition for the transform property */
+}
+
+
+.grid{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap:1rem;
+width: 100%;
+height: 100%;
+margin: 2%;
+}
+
+.grid-col-span-2{
+grid-column: span 2;
+}
+
+.grid-row-span-2{
+  grid-row: span 2;
+}
+
+.grid :first-child{
+  background-color: #888387;
+}
+
+
+
+.grid .secondChild{
+  background-color: #6996f8;
+}
+
+.grid .thirdChild{
+  background-color: #74bf58;
+}
+
+.grid .forthChild{
+  background-color: #944ea7;
+}
+
+.grid :last-child{
+  background-color: rgb(246, 186, 107);
+}
+
+.testimanial{
+  padding: 2rem;
+  border-radius: 2%;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.HeaderBanner{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  border-radius: 2%;
+  background: linear-gradient(-70deg, orange 50%, black 50%);
+}
+
+.HeaderImage{
+  position: absolute;
+  margin: 2%;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 92%;
+  object-fit: cover;
+  border-radius: 2%;
+}
+
+.HeaderContent {
+  position: absolute;
+  align-self: center;
+  margin:40%;
+  margin-left: 20%;
+  margin-bottom: 50%;
+  flex-direction: column;
+  color: orange;
+}
+
+.HeaderTitle{
+margin-bottom: 5%;
+}
+
+.HeaderContentText{
+  overflow: hidden;
+  overflow: scroll;
+}
+
+.HomeAbout{
+  width: 100%;
+  height: 100%;
+  margin: 2%;
+  background-color: rgb(75, 68, 68);
+}
+
+@media (max-width: 760px) {
+  nav{
+      flex-direction: column;
+  } 
+  nav ul {
+    flex-direction: column;
+    align-items: center;  
+  }
+  .Nav-Container{
+    height: 30vh;
+    overflow: hidden;
+    overflow: scroll;
+    align-items: center;
+  }
+
+  .Container{
+    flex-direction: column;
+    align-items: center; 
+    overflow: hidden;
+    overflow: scroll;
+   }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:1rem;
+    width: 100%;
+    height: 100%;
+    margin: 2%;
+   }
+
+   .grid-col-span-2{
+    grid-column: span 1;
+   }
+
+   .grid-row-span-2{
+    grid-row: span 1;
+   }
+  .gradient{
+    background: linear-gradient(-45deg, #02e1fa 50%, #f750fa 50%);
+    width: 100vw;
+    height: 80vh;
+    filter: blur(480px);
+    z-index: -2;
+  }
+
+  .imageContainer{
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    width: 90vw;
+  }
+
+  .preprep{
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    width: 90vw;
+  }
+  .prep{
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    width: 90vw;
+  }
+  .gradeschool{
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    width: 90vw;
+  }
+
+  .jss{
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    width: 90vw;
+  }
+
+  .VideoTour{
+    flex: 1;
+    position: relative;
+    width: 90vw;
+    }
+
+    .HeaderBanner{
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    }
+
+    .HeaderImage{
+      position: absolute;
+      margin: 5%;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: 95%;
+      object-fit: cover;
+      border-radius: 2%;
+    }
 }
 
